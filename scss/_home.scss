@@ -1,0 +1,39 @@
+/* Home Start */
+.home {
+  background: url(../img/hydra.jpg) no-repeat center center;
+  color: $light-color;
+  background-size: cover;
+  height: 100vh;
+  font-size: 20px;
+}
+.hero {
+  background: rgba($color: $lighter-color, $alpha: 0.7);
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  line-height: 3em;
+  color: $dark-color;
+  overflow: hidden;
+  padding-left: 20px;
+}
+
+/* ROY */
+.roy {
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+  color: #fca311;
+}
+.service {
+  color: #14213d;
+}
+.home .hero .welcome {
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+/* Home End */
