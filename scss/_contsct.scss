@@ -45,14 +45,23 @@
         padding: 20px 0;
         display: flex;
         .icon {
-          min-width: 60px;
-          height: 60px;
+          min-width: 40px;
+          height: 40px;
           background: #fff;
           display: flex;
           justify-content: center;
           align-items: center;
           border-radius: 50%;
           font-size: 22px;
+          a {
+            color: $main-color;
+          }
+          &:hover {
+            background-color: $main-color;
+            a {
+              color: #fff;
+            }
+          }
         }
         .text {
           display: flex;
@@ -63,7 +72,7 @@
           font-weight: 300;
           h3 {
             font-weight: 500;
-            color: #00bcd4;
+            color: $main-color;
           }
         }
       }
@@ -87,18 +96,19 @@
         margin-top: 10px;
         input,
         textarea {
+          background-color: #f9f9f9;
           width: 100%;
           padding: 5px 0;
           font-size: 16px;
           margin: 10px 0;
           border: none;
-          border-bottom: 2px solid #333;
+          border-bottom: 1px solid #4a3f35;
           outline: none;
           resize: none;
         }
         span {
           position: absolute;
-          left: 0;
+          left: 8px;
           padding: 5px 0;
           font-size: 16px;
           margin: 10px 0;
@@ -110,18 +120,22 @@
         input:valid ~ span,
         textarea:focus ~ span,
         textarea:valid ~ span {
-          color: #e91e63;
+          color: $second-color;
           font-size: 12px;
           transform: translateY(-20px);
         }
         input[type='submit'] {
           width: 100px;
-          background: #00bcd4;
+          background: $main-color;
           color: #fff;
           border: none;
           cursor: pointer;
           padding: 10px;
           font-size: 18px;
+          border-radius: 3px;
+          &:hover {
+            transform: scale(0.98);
+          }
         }
       }
     }

@@ -1,0 +1,46 @@
+// about
+.about {
+  height: 120vh;
+  width: 100%;
+  background: #272727;
+  padding: 10%;
+  .abut-title {
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 600;
+    border-bottom: 3px solid #fff;
+    font-size: 2em;
+  }
+  .abut-content {
+    // background: rgba(0, 0, 0, 0.25);
+    padding: 3%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    border-radius: 10px;
+    // border: 2px solid black;
+    .abut-des1 {
+      font-family: 'Lato', sans-serif;
+      margin-top: -15px;
+      font-size: 2.5em;
+      font-weight: 300;
+      line-height: normal;
+      text-align: right;
+      color: #fff;
+    }
+    .abut-des2 {
+      color: #fff;
+      flex-grow: 2;
+      line-height: 25px;
+    }
+    .baar {
+      background-color: white;
+      margin: 20px;
+      padding: 0 2px;
+      height: 400px;
+      flex-grow: 0.5;
+    }
+  }
+}
