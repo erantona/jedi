@@ -6,7 +6,6 @@
   padding: 10%;
   .abut-title {
     color: #fff;
-    font-size: 1.3em;
     font-weight: 600;
     border-bottom: 3px solid #fff;
     font-size: 2em;
@@ -21,26 +20,69 @@
     height: 500px;
     border-radius: 10px;
     // border: 2px solid black;
-    .abut-des1 {
-      font-family: 'Lato', sans-serif;
-      margin-top: -15px;
-      font-size: 2.5em;
-      font-weight: 300;
-      line-height: normal;
-      text-align: right;
-      color: #fff;
+    .anime3 {
+      animation: yourAnimation3 1.5s forwards 0s ease-out;
+      .abut-des1 {
+        position: relative;
+        font-family: 'Lato', sans-serif;
+        margin-top: -15px;
+        font-size: 2.5em;
+        font-weight: 300;
+        line-height: normal;
+        text-align: right;
+        color: #fff;
+      }
     }
-    .abut-des2 {
-      color: #fff;
-      flex-grow: 2;
-      line-height: 25px;
-    }
+
     .baar {
       background-color: white;
       margin: 20px;
       padding: 0 2px;
       height: 400px;
       flex-grow: 0.5;
+      animation: yourAnimation1 1s forwards 0s ease-in;
+      //-----------------------------------
     }
+    .anime2 {
+      animation: yourAnimation2 1.5s forwards 0s ease-out;
+      .abut-des2 {
+        color: #fff;
+        flex-grow: 2;
+        line-height: 25px;
+      }
+    }
+  }
+}
+
+// keyframe
+@keyframes yourAnimation1 {
+  0% {
+    transform: rotate(0) translateY(-110%);
+    opacity: 0.1;
+  }
+  100% {
+    transform: rotate(0) translateY(0%);
+    opacity: 1;
+  }
+}
+// -------------------------
+@keyframes yourAnimation2 {
+  0% {
+    transform: rotate(0) translateX(52%);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0) translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes yourAnimation3 {
+  0% {
+    transform: rotate(0) translateX(-60%);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0) translateX(0%);
+    opacity: 1;
   }
 }

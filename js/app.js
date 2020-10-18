@@ -32,3 +32,4 @@ function scrollFunction() {
     document.querySelector("nav").style.backgroundColor = "";
   }
 }
+const pool = "op";
