@@ -1,9 +1,21 @@
 // about
 .about {
-  height: 120vh;
+  height: auto;
   width: 100%;
   background: #272727;
-  padding: 10%;
+  padding: 6% 10%;
+  @media (max-width: 1195px) {
+    padding-top: 8%;
+    height: 120vh;
+  }
+  @media (max-width: 991px) {
+    padding-top: 10%;
+    height: 150vh;
+  }
+  @media (max-width: 430px) {
+    padding-top: 10%;
+    height: 180vh;
+  }
   .abut-title {
     color: #fff;
     font-weight: 600;
@@ -11,7 +23,6 @@
     font-size: 2em;
   }
   .abut-content {
-    // background: rgba(0, 0, 0, 0.25);
     padding: 3%;
     margin-top: 50px;
     display: flex;
@@ -19,7 +30,9 @@
     align-items: center;
     height: 500px;
     border-radius: 10px;
-    // border: 2px solid black;
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
     .anime3 {
       animation: yourAnimation3 1.5s forwards 0s ease-out;
       .abut-des1 {
@@ -32,6 +45,37 @@
         text-align: right;
         color: #fff;
       }
+      @media (max-width: 991px) {
+        margin: 2em auto;
+      }
+      @media (max-width: 669px) {
+        padding-top: 5em;
+      }
+      @media (max-width: 669px) {
+        font-size: 0.8em;
+        padding-top: 10em;
+      }
+      @media (max-width: 490px) {
+        font-size: 0.7em;
+        padding-top: 15em;
+      }
+      @media (max-width: 460px) {
+        font-size: 0.7em;
+        padding-top: 20em;
+      }
+      @media (max-width: 430px) {
+        font-size: 0.6em;
+        padding-top: 25em;
+      }
+      @media (max-width: 400px) {
+        padding-top: 30em;
+      }
+      @media (max-width: 370px) {
+        padding-top: 35em;
+      }
+      @media (max-width: 350px) {
+        padding-top: 40em;
+      }
     }
 
     .baar {
@@ -42,6 +86,9 @@
       flex-grow: 0.5;
       animation: yourAnimation1 1s forwards 0s ease-in;
       //-----------------------------------
+      @media (max-width: 991px) {
+        display: none;
+      }
     }
     .anime2 {
       animation: yourAnimation2 1.5s forwards 0s ease-out;

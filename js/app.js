@@ -6,7 +6,7 @@ const navslide = () => {
   // /togglemap
   burger.addEventListener('click', () => {
     nav.classList.toggle('nav-active');
-    document.querySelector("nav").style.backgroundColor = "#fff";
+    document.querySelector('nav').style.backgroundColor = '#fff';
     navLinks.forEach((link, index) => {
       if (link.style.animation) {
         link.style.animation = '';
@@ -22,14 +22,15 @@ const navslide = () => {
 };
 navslide();
 
-
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+  scrollFunction();
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.querySelector("nav").style.backgroundColor = "#fff";
+    document.querySelector('nav').style.backgroundColor = 'rgb(199, 196, 171)';
   } else {
-    document.querySelector("nav").style.backgroundColor = "";
+    document.querySelector('nav').style.backgroundColor = '';
   }
 }
-const pool = "op";
+const pool = 'op';
