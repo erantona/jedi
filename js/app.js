@@ -1,3 +1,4 @@
+let flag = false;
 const navslide = () => {
   var header = document.querySelector('.header');
   const burger = document.querySelector('.burger');
@@ -5,6 +6,8 @@ const navslide = () => {
   const navLinks = document.querySelectorAll('.nav-links li');
   // /togglemap
   burger.addEventListener('click', () => {
+    flag = true;
+    console.log(flag);
     nav.classList.toggle('nav-active');
     document.querySelector('nav').style.backgroundColor = '#fff';
     navLinks.forEach((link, index) => {
@@ -16,9 +19,23 @@ const navslide = () => {
         }s`;
       }
     });
-
     burger.classList.toggle('anime');
   });
+  for (let i = 0; i < navLinks.length; i++) {
+    navLinks[i].addEventListener('click', () => {
+      if (flag) {
+        nav.classList.toggle('nav-active');
+        console.log('ok');
+        flag = false;
+        navLinks.forEach((link, index) => {
+          if (link.style.animation) {
+            link.style.animation = '';
+          }
+        });
+      }
+      burger.classList.toggle('anime');
+    });
+  }
 };
 navslide();
 
@@ -28,9 +45,15 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.querySelector('nav').style.backgroundColor = 'rgb(199, 196, 171)';
+    document.querySelector('nav').style.backgroundColor = '#fff';
   } else {
     document.querySelector('nav').style.backgroundColor = '';
   }
 }
-const pool = 'op';
+
+const flick = () => {
+  const nav = document.querySelector('.nav-links');
+  const navLinks = document.querySelectorAll('.nav-links a');
+};
+
+flick();

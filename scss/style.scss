@@ -4,12 +4,13 @@
 @import 'contsct';
 @import 'footer';
 @import 'about';
+@import 'service';
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +20,28 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 section {
+  min-width: 100vw;
   min-height: 100vh;
+  height: auto;
+  margin: 0;
+  padding: 80px 5vw 5vh 5vw;
+  position: relative;
+  height: auto;
+  width: 100vw;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2 {
+  width: 80vw;
+  color: #fff;
+  border-bottom: 3px solid #fff;
+  font-size: 3rem;
+  margin-bottom: 10vh;
 }
 .change-phone {
   transform: rotate(180deg);
@@ -31,146 +53,6 @@ a {
   text-decoration: none;
   color: #333;
 }
-// Services
-.service {
-  height: auto;
-  padding: 6% 10%;
-  @media (max-width: 1195px) {
-    padding-top: 8%;
-  }
-  @media (max-width: 991px) {
-    padding-top: 10%;
-  }
-  .title {
-    color: #333;
-    font-weight: 600;
-    border-bottom: 3px solid #333;
-    font-size: 2em;
-    height: auto;
-  }
-  .service-content {
-    padding: 125px 0 0 0;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    @media (max-width: 991px) {
-      padding: 10%;
-    }
-    .team-container {
-      width: 100%;
-      height: auto;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      margin: 0 auto;
-      @media (max-width: 991px) {
-        flex-direction: column;
-      }
-      .single-img {
-        border-radius: 5px;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        flex-direction: column-reverse;
-        flex-wrap: nowrap;
-        width: 85%;
-        height: 360px;
-        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
-        overflow: hidden;
-        transform: translate(0, 0);
-        transition: 0.3s;
-        @media (max-width: 1264px) {
-          height: 300px;
-        }
-        @media (max-width: 991px) {
-          margin-bottom: 50px;
-          width: 100%;
-          height: 400px;
-        }
-
-        &:hover {
-          transform: translate(0, 9px);
-          .img-text {
-            transform: translate(0, 0);
-          }
-        }
-        .img-text {
-          background: #fff;
-          padding: 0 10px 5px 10px;
-          width: 100%;
-          height: auto;
-          position: relative;
-          transform: translate(0, 120px);
-          line-height: 28px;
-          transition: 0.5s ease;
-          display: inline-block;
-          @media (max-width: 1513px) {
-            line-height: 22px;
-          }
-          @media (max-width: 1264px) {
-            font-size: 0.9em;
-          }
-          @media (max-width: 1146px) {
-            font-size: 0.8em;
-          }
-          @media (max-width: 1036px) {
-            font-size: 0.7em;
-          }
-          @media (max-width: 991px) {
-            font-size: 1em;
-            line-height: 36px;
-          }
-          @media (max-width: 700px) {
-            font-size: 1em;
-            line-height: 30px;
-          }
-          @media (max-width: 585px) {
-            font-size: 1em;
-            line-height: 30px;
-          }
-          @media (max-width: 430px) {
-            font-size: 1em;
-            line-height: 24px;
-          }
-          p i {
-            // margin-bottom: 10px;
-            padding: 1px 10px;
-            background-color: #ffb400;
-            border-radius: 5%;
-          }
-          h4 {
-            line-height: 16px;
-            padding: 0;
-            margin: 16px 0;
-          }
-        }
-      }
-      .img-one {
-        background-image: url(../img/bulldozer.png);
-        background-size: cover;
-        background-position: center center;
-      }
-      .img-two {
-        background-image: url(../img/crane.png);
-        background-size: cover;
-        background-position: center center;
-      }
-      .img-three {
-        background-image: url(../img/forklifter.png);
-        background-size: cover;
-        background-position: center center;
-      }
-    }
-  }
+img {
+  min-width: 10vh !important;
 }

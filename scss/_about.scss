@@ -1,97 +1,41 @@
 // about
 .about {
-  height: auto;
-  width: 100%;
   background: #272727;
-  padding: 6% 10%;
-  @media (max-width: 1195px) {
-    padding-top: 8%;
-    height: 120vh;
-  }
-  @media (max-width: 991px) {
-    padding-top: 10%;
-    height: 150vh;
-  }
-  @media (max-width: 430px) {
-    padding-top: 10%;
-    height: 180vh;
-  }
-  .abut-title {
-    color: #fff;
-    font-weight: 600;
-    border-bottom: 3px solid #fff;
-    font-size: 2em;
-  }
   .abut-content {
-    padding: 3%;
     margin-top: 50px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 500px;
-    border-radius: 10px;
     @media (max-width: 991px) {
       flex-direction: column;
     }
     .anime3 {
-      animation: yourAnimation3 1.5s forwards 0s ease-out;
       .abut-des1 {
-        position: relative;
         font-family: 'Lato', sans-serif;
-        margin-top: -15px;
-        font-size: 2.5em;
-        font-weight: 300;
+        font-size: 3rem;
+        font-weight: lighter;
         line-height: normal;
         text-align: right;
         color: #fff;
-      }
-      @media (max-width: 991px) {
-        margin: 2em auto;
-      }
-      @media (max-width: 669px) {
-        padding-top: 5em;
-      }
-      @media (max-width: 669px) {
-        font-size: 0.8em;
-        padding-top: 10em;
-      }
-      @media (max-width: 490px) {
-        font-size: 0.7em;
-        padding-top: 15em;
-      }
-      @media (max-width: 460px) {
-        font-size: 0.7em;
-        padding-top: 20em;
-      }
-      @media (max-width: 430px) {
-        font-size: 0.6em;
-        padding-top: 25em;
-      }
-      @media (max-width: 400px) {
-        padding-top: 30em;
-      }
-      @media (max-width: 370px) {
-        padding-top: 35em;
-      }
-      @media (max-width: 350px) {
-        padding-top: 40em;
+        padding-bottom: 10%;
       }
     }
-
     .baar {
       background-color: white;
       margin: 20px;
       padding: 0 2px;
-      height: 400px;
+      height: 40vh;
+      width: 5px;
       flex-grow: 0.5;
-      animation: yourAnimation1 1s forwards 0s ease-in;
-      //-----------------------------------
       @media (max-width: 991px) {
         display: none;
       }
     }
     .anime2 {
-      animation: yourAnimation2 1.5s forwards 0s ease-out;
       .abut-des2 {
         color: #fff;
         flex-grow: 2;
@@ -102,34 +46,3 @@
 }
 
 // keyframe
-@keyframes yourAnimation1 {
-  0% {
-    transform: rotate(0) translateY(-110%);
-    opacity: 0.1;
-  }
-  100% {
-    transform: rotate(0) translateY(0%);
-    opacity: 1;
-  }
-}
-// -------------------------
-@keyframes yourAnimation2 {
-  0% {
-    transform: rotate(0) translateX(52%);
-    opacity: 0;
-  }
-  100% {
-    transform: rotate(0) translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes yourAnimation3 {
-  0% {
-    transform: rotate(0) translateX(-60%);
-    opacity: 0;
-  }
-  100% {
-    transform: rotate(0) translateX(0%);
-    opacity: 1;
-  }
-}

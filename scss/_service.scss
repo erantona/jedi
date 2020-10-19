@@ -1,0 +1,89 @@
+// Services
+.service {
+  background-color: #f7dad9;
+  .service-content {
+    .team-container {
+      width: 80vw;
+      height: auto;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      .single-img {
+        border-radius: 5px;
+        margin: 40px 0;
+        flex: 1;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        width: 320px;
+        height: 320px;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        transform: translate(0, 0);
+        transition: 0.3s;
+        @media (max-width: 360px) {
+          width: 280px;
+          height: 280px;
+        }
+        @media (max-width: 320px) {
+          width: 200px;
+          height: 200px;
+        }
+        &:hover {
+          transform: translate(0, 9px);
+          .img-text {
+            transform: translate(0, 64px);
+          }
+        }
+        .img-text {
+          background: #fff;
+          padding: 0 10px 5px 10px;
+          width: 100%;
+          height: auto;
+          position: relative;
+          transform: translate(0, 210px);
+          line-height: 28px;
+          transition: 0.5s ease;
+          display: inline-block;
+          p i {
+            padding: 1px 10px;
+            background-color: #ffb400;
+            border-radius: 5%;
+          }
+          h4 {
+            text-align: center;
+            line-height: 16px;
+            padding: 0;
+            margin: 16px 0;
+          }
+        }
+      }
+      .img-one {
+        background-image: url(../img/bulldozer.png);
+        background-size: cover;
+        background-position: center center;
+      }
+      .img-two {
+        background-image: url(../img/crane.png);
+        background-size: cover;
+        background-position: center center;
+      }
+      .img-three {
+        background-image: url(../img/forklifter.png);
+        background-size: cover;
+        background-position: center center;
+      }
+    }
+  }
+}
