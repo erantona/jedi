@@ -1,6 +1,27 @@
 // about
 .about {
-  background: #272727;
+  background-image: repeating-linear-gradient(
+      358deg,
+      rgb(0, 0, 0) 0px,
+      rgb(0, 0, 0) 27px,
+      transparent 27px,
+      transparent 29px
+    ),
+    repeating-linear-gradient(
+      280deg,
+      rgb(0, 0, 0) 0px,
+      rgb(0, 0, 0) 27px,
+      transparent 27px,
+      transparent 29px
+    ),
+    repeating-linear-gradient(
+      337deg,
+      rgb(0, 0, 0) 0px,
+      rgb(0, 0, 0) 27px,
+      transparent 27px,
+      transparent 29px
+    ),
+    linear-gradient(90deg, rgb(225, 16, 162), rgb(169, 105, 71));
   .abut-content {
     margin-top: 50px;
     display: -webkit-flex;
