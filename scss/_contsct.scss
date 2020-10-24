@@ -4,12 +4,11 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: url(../img/cont-bg.jpg);
-  background-size: cover;
+  background: #fff;
   .title {
     max-width: 100%;
     text-align: left;
-    color: #fff;
+    color: #333;
     p {
       top: 10px;
     }
@@ -38,7 +37,7 @@
         .icon {
           min-width: 40px;
           height: 40px;
-          background: #fff;
+          background: #333;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -50,7 +49,7 @@
           &:hover {
             background-color: $main-color;
             a {
-              color: #fff;
+              color: #333;
             }
           }
         }
@@ -58,7 +57,7 @@
           display: flex;
           margin-left: 20px;
           font-size: 16px;
-          color: #fff;
+          color: #333;
           flex-direction: column;
           font-weight: 300;
           h3 {
@@ -72,6 +71,9 @@
       width: 40%;
       padding: 40px;
       background: #fff;
+      box-shadow: 0 0px 1.5px rgba(0, 0, 0, 0.044),
+        0 0px 4.9px rgba(0, 0, 0, 0.066), 0 0px 22px rgba(0, 0, 0, 0.11);
+
       border-radius: 5px;
       @media (max-width: 991px) {
         width: 100%;

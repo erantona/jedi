@@ -16,14 +16,22 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-image: url(../img/hook-1943675.jpg);
+    background-image: url(../img/hook-1943675-min.jpg);
     background-size: cover;
     background-position: center center;
-    // opacity: 0.5;
   }
   .hero {
-    width: 60vw;
+    padding-top: 100px;
+    flex-direction: column;
+    float: left;
+    width: 50vw;
     height: 40vh;
+
+    color: white;
+    font-size: 24px;
+    h1 {
+      font-size: 3rem;
+    }
   }
 }
 
