@@ -1,12 +1,12 @@
 /* nav Start */
 nav {
-  z-index: 100;
+  z-index: 10;
   position: fixed;
   width: 100%;
   min-height: 80px;
   display: flex;
   justify-content: space-between;
-  padding: 1vh 3vw;
+  // padding: 0vh 3vw;
   align-items: center;
   transition: all 0.3s ease;
   background-color: #fff;

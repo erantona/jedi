@@ -39,18 +39,6 @@ const navslide = () => {
 };
 navslide();
 
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.querySelector('nav').style.backgroundColor = '#fff';
-  } else {
-    document.querySelector('nav').style.backgroundColor = '';
-  }
-}
-
 const flick = () => {
   const nav = document.querySelector('.nav-links');
   const navLinks = document.querySelectorAll('.nav-links a');
