@@ -5,7 +5,12 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url(../img/bgop.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(255, 255, 255, 0)
+    ),
+    url(../img/bgop.jpg);
   background-size: cover;
   background-position: center center;
   .hero {
@@ -16,6 +21,7 @@
       width: 80%;
     }
     @media (max-width: 421px) {
+      padding-top: 0;
       width: 100%;
     }
     height: auto;
