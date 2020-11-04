@@ -114,8 +114,7 @@
         }
         input:focus ~ span,
         input:valid ~ span,
-        textarea:focus ~ span,
-        textarea:valid ~ span {
+        textarea:focus ~ span {
           color: $second-color;
           font-size: 12px;
           transform: translateY(-20px);
